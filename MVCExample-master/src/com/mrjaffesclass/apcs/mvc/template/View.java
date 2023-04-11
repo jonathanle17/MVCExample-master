@@ -133,195 +133,264 @@ public class View extends javax.swing.JFrame implements MessageHandler {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButton1.setBackground(new java.awt.Color(0, 153, 51));
         jButton1.setText("jButton1");
         jButton1.setName("00"); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
+        jButton2.setBackground(new java.awt.Color(0, 153, 51));
         jButton2.setText("jButton1");
         jButton2.setName("01"); // NOI18N
 
+        jButton3.setBackground(new java.awt.Color(0, 153, 51));
         jButton3.setText("jButton1");
         jButton3.setName("02"); // NOI18N
 
+        jButton4.setBackground(new java.awt.Color(0, 153, 51));
         jButton4.setText("jButton1");
         jButton4.setName("03"); // NOI18N
 
+        jButton5.setBackground(new java.awt.Color(0, 153, 51));
         jButton5.setText("jButton1");
         jButton5.setName("04"); // NOI18N
 
+        jButton6.setBackground(new java.awt.Color(0, 153, 51));
         jButton6.setText("jButton1");
         jButton6.setName("05"); // NOI18N
 
+        jButton7.setBackground(new java.awt.Color(0, 153, 51));
         jButton7.setText("jButton1");
         jButton7.setName("06"); // NOI18N
 
+        jButton8.setBackground(new java.awt.Color(0, 153, 51));
         jButton8.setText("jButton1");
         jButton8.setName("07"); // NOI18N
 
+        jButton9.setBackground(new java.awt.Color(0, 153, 51));
         jButton9.setText("jButton1");
         jButton9.setName("10"); // NOI18N
 
+        jButton10.setBackground(new java.awt.Color(0, 153, 51));
         jButton10.setText("jButton1");
         jButton10.setName("11"); // NOI18N
 
+        jButton11.setBackground(new java.awt.Color(0, 153, 51));
         jButton11.setText("jButton1");
         jButton11.setName("12"); // NOI18N
 
+        jButton12.setBackground(new java.awt.Color(0, 153, 51));
         jButton12.setText("jButton1");
         jButton12.setName("13"); // NOI18N
 
+        jButton13.setBackground(new java.awt.Color(0, 153, 51));
         jButton13.setText("jButton1");
         jButton13.setName("14"); // NOI18N
 
+        jButton14.setBackground(new java.awt.Color(0, 153, 51));
         jButton14.setText("jButton1");
         jButton14.setName("15"); // NOI18N
 
+        jButton15.setBackground(new java.awt.Color(0, 153, 51));
         jButton15.setText("jButton1");
         jButton15.setName("16"); // NOI18N
 
+        jButton16.setBackground(new java.awt.Color(0, 153, 51));
         jButton16.setText("jButton1");
         jButton16.setName("17"); // NOI18N
 
+        jButton17.setBackground(new java.awt.Color(0, 153, 51));
         jButton17.setText("jButton1");
         jButton17.setName("20"); // NOI18N
 
+        jButton18.setBackground(new java.awt.Color(0, 153, 51));
         jButton18.setText("jButton1");
         jButton18.setName("21"); // NOI18N
 
+        jButton19.setBackground(new java.awt.Color(0, 153, 51));
         jButton19.setText("jButton1");
         jButton19.setName("22"); // NOI18N
 
+        jButton20.setBackground(new java.awt.Color(0, 153, 51));
         jButton20.setText("jButton1");
         jButton20.setName("23"); // NOI18N
 
+        jButton21.setBackground(new java.awt.Color(0, 153, 51));
         jButton21.setText("jButton1");
         jButton21.setName("24"); // NOI18N
 
+        jButton22.setBackground(new java.awt.Color(0, 153, 51));
         jButton22.setText("jButton1");
         jButton22.setName("25"); // NOI18N
 
+        jButton23.setBackground(new java.awt.Color(0, 153, 51));
         jButton23.setText("jButton1");
         jButton23.setName("26"); // NOI18N
 
+        jButton24.setBackground(new java.awt.Color(0, 153, 51));
         jButton24.setText("jButton1");
         jButton24.setName("27"); // NOI18N
 
+        jButton25.setBackground(new java.awt.Color(0, 153, 51));
         jButton25.setText("jButton1");
         jButton25.setName("30"); // NOI18N
 
+        jButton26.setBackground(new java.awt.Color(0, 153, 51));
         jButton26.setText("jButton1");
         jButton26.setName("31"); // NOI18N
 
+        jButton27.setBackground(new java.awt.Color(0, 153, 51));
         jButton27.setText("jButton1");
         jButton27.setName("32"); // NOI18N
 
+        jButton28.setBackground(new java.awt.Color(0, 153, 51));
         jButton28.setText("jButton1");
         jButton28.setName("33"); // NOI18N
 
+        jButton29.setBackground(new java.awt.Color(0, 153, 51));
         jButton29.setText("jButton1");
         jButton29.setName("34"); // NOI18N
 
+        jButton30.setBackground(new java.awt.Color(0, 153, 51));
         jButton30.setText("jButton1");
         jButton30.setName("35"); // NOI18N
 
+        jButton31.setBackground(new java.awt.Color(0, 153, 51));
         jButton31.setText("jButton1");
         jButton31.setName("36"); // NOI18N
 
+        jButton32.setBackground(new java.awt.Color(0, 153, 51));
         jButton32.setText("jButton1");
         jButton32.setName("37"); // NOI18N
 
+        jButton33.setBackground(new java.awt.Color(0, 153, 51));
         jButton33.setText("jButton1");
         jButton33.setName("40"); // NOI18N
 
+        jButton34.setBackground(new java.awt.Color(0, 153, 51));
         jButton34.setText("jButton1");
         jButton34.setName("41"); // NOI18N
 
+        jButton35.setBackground(new java.awt.Color(0, 153, 51));
         jButton35.setText("jButton1");
         jButton35.setName("42"); // NOI18N
 
+        jButton36.setBackground(new java.awt.Color(0, 153, 51));
         jButton36.setText("jButton1");
         jButton36.setName("43"); // NOI18N
 
+        jButton37.setBackground(new java.awt.Color(0, 153, 51));
         jButton37.setText("jButton1");
         jButton37.setName("44"); // NOI18N
 
+        jButton38.setBackground(new java.awt.Color(0, 153, 51));
         jButton38.setText("jButton1");
         jButton38.setName("45"); // NOI18N
 
+        jButton39.setBackground(new java.awt.Color(0, 153, 51));
         jButton39.setText("jButton1");
         jButton39.setName("46"); // NOI18N
 
+        jButton40.setBackground(new java.awt.Color(0, 153, 51));
         jButton40.setText("jButton1");
         jButton40.setName("47"); // NOI18N
 
+        jButton41.setBackground(new java.awt.Color(0, 153, 51));
         jButton41.setText("jButton1");
         jButton41.setName("50"); // NOI18N
 
+        jButton42.setBackground(new java.awt.Color(0, 153, 51));
         jButton42.setText("jButton1");
         jButton42.setName("51"); // NOI18N
 
+        jButton43.setBackground(new java.awt.Color(0, 153, 51));
         jButton43.setText("jButton1");
         jButton43.setName("52"); // NOI18N
 
+        jButton44.setBackground(new java.awt.Color(0, 153, 51));
         jButton44.setText("jButton1");
         jButton44.setName("53"); // NOI18N
 
+        jButton45.setBackground(new java.awt.Color(0, 153, 51));
         jButton45.setText("jButton1");
         jButton45.setName("54"); // NOI18N
 
+        jButton46.setBackground(new java.awt.Color(0, 153, 51));
         jButton46.setText("jButton1");
         jButton46.setName("55"); // NOI18N
 
+        jButton47.setBackground(new java.awt.Color(0, 153, 51));
         jButton47.setText("jButton1");
         jButton47.setName("56"); // NOI18N
 
+        jButton48.setBackground(new java.awt.Color(0, 153, 51));
         jButton48.setText("jButton1");
         jButton48.setName("57"); // NOI18N
 
+        jButton49.setBackground(new java.awt.Color(0, 153, 51));
         jButton49.setText("jButton1");
         jButton49.setName("60"); // NOI18N
 
+        jButton50.setBackground(new java.awt.Color(0, 153, 51));
         jButton50.setText("jButton1");
         jButton50.setName("61"); // NOI18N
 
+        jButton51.setBackground(new java.awt.Color(0, 153, 51));
         jButton51.setText("jButton1");
         jButton51.setName("62"); // NOI18N
 
+        jButton52.setBackground(new java.awt.Color(0, 153, 51));
         jButton52.setText("jButton1");
         jButton52.setName("63"); // NOI18N
 
+        jButton53.setBackground(new java.awt.Color(0, 153, 51));
         jButton53.setText("jButton1");
         jButton53.setName("64"); // NOI18N
 
+        jButton54.setBackground(new java.awt.Color(0, 153, 51));
         jButton54.setText("jButton1");
         jButton54.setName("65"); // NOI18N
 
+        jButton55.setBackground(new java.awt.Color(0, 153, 51));
         jButton55.setText("jButton1");
         jButton55.setName("66"); // NOI18N
 
+        jButton56.setBackground(new java.awt.Color(0, 153, 51));
         jButton56.setText("jButton1");
         jButton56.setName("67"); // NOI18N
 
+        jButton57.setBackground(new java.awt.Color(0, 153, 51));
         jButton57.setText("jButton1");
         jButton57.setName("70"); // NOI18N
 
+        jButton58.setBackground(new java.awt.Color(0, 153, 51));
         jButton58.setText("jButton1");
         jButton58.setName("71"); // NOI18N
 
+        jButton59.setBackground(new java.awt.Color(0, 153, 51));
         jButton59.setText("jButton1");
         jButton59.setName("72"); // NOI18N
 
+        jButton60.setBackground(new java.awt.Color(0, 153, 51));
         jButton60.setText("jButton1");
         jButton60.setName("73"); // NOI18N
 
+        jButton61.setBackground(new java.awt.Color(0, 153, 51));
         jButton61.setText("jButton1");
         jButton61.setName("74"); // NOI18N
 
+        jButton62.setBackground(new java.awt.Color(0, 153, 51));
         jButton62.setText("jButton1");
         jButton62.setName("75"); // NOI18N
 
+        jButton63.setBackground(new java.awt.Color(0, 153, 51));
         jButton63.setText("jButton1");
         jButton63.setName("76"); // NOI18N
 
+        jButton64.setBackground(new java.awt.Color(0, 153, 51));
         jButton64.setText("jButton1");
         jButton64.setName("77"); // NOI18N
 
@@ -537,21 +606,26 @@ public class View extends javax.swing.JFrame implements MessageHandler {
                     .addComponent(jButton56, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton58, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton59, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton62, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton63, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton64, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton58, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton59, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
   /**
    * @param args the command line arguments
