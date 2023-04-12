@@ -23,10 +23,10 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jButton1" min="-2" pref="74" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -165,7 +165,7 @@
                       <Component id="jButton64" min="-2" pref="74" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -279,7 +279,7 @@
         <Property name="name" type="java.lang.String" value="00" noResource="true"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
@@ -290,6 +290,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="01" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
@@ -299,6 +302,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="02" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton4">
       <Properties>
@@ -308,6 +314,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="03" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton5">
       <Properties>
@@ -317,6 +326,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="04" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton6">
       <Properties>
@@ -326,6 +338,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="05" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
@@ -335,6 +350,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="06" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton8">
       <Properties>
@@ -344,6 +362,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="07" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton9">
       <Properties>
@@ -353,6 +374,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="10" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton10">
       <Properties>
@@ -362,6 +386,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="11" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton11">
       <Properties>
@@ -371,6 +398,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="12" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton12">
       <Properties>
@@ -380,6 +410,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="13" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton13">
       <Properties>
@@ -389,6 +422,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="14" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton14">
       <Properties>
@@ -398,6 +434,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="15" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton15">
       <Properties>
@@ -407,6 +446,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="16" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton16">
       <Properties>
@@ -416,6 +458,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="17" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton17">
       <Properties>
@@ -425,6 +470,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="20" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton18">
       <Properties>
@@ -434,6 +482,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="21" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton19">
       <Properties>
@@ -443,6 +494,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="22" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton20">
       <Properties>
@@ -452,6 +506,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="23" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton21">
       <Properties>
@@ -461,6 +518,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="24" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton22">
       <Properties>
@@ -470,6 +530,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="25" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton23">
       <Properties>
@@ -479,6 +542,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="26" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton24">
       <Properties>
@@ -488,6 +554,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="27" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton25">
       <Properties>
@@ -497,6 +566,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="30" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton26">
       <Properties>
@@ -506,6 +578,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="31" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton27">
       <Properties>
@@ -515,6 +590,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="32" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton28">
       <Properties>
@@ -524,6 +602,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="33" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton29">
       <Properties>
@@ -533,6 +614,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="34" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton30">
       <Properties>
@@ -542,6 +626,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="35" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton31">
       <Properties>
@@ -551,6 +638,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="36" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton32">
       <Properties>
@@ -560,6 +650,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="37" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton33">
       <Properties>
@@ -569,6 +662,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="40" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton34">
       <Properties>
@@ -578,6 +674,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="41" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton35">
       <Properties>
@@ -587,6 +686,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="42" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton36">
       <Properties>
@@ -596,6 +698,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="43" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton37">
       <Properties>
@@ -605,6 +710,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="44" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton38">
       <Properties>
@@ -614,6 +722,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="45" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton39">
       <Properties>
@@ -623,6 +734,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="46" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton40">
       <Properties>
@@ -632,6 +746,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="47" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton41">
       <Properties>
@@ -641,6 +758,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="50" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton42">
       <Properties>
@@ -650,6 +770,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="51" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton43">
       <Properties>
@@ -659,6 +782,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="52" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton44">
       <Properties>
@@ -668,6 +794,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="53" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton45">
       <Properties>
@@ -677,6 +806,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="54" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton46">
       <Properties>
@@ -686,6 +818,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="55" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton47">
       <Properties>
@@ -695,6 +830,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="56" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton48">
       <Properties>
@@ -704,6 +842,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="57" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton49">
       <Properties>
@@ -713,6 +854,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="60" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton50">
       <Properties>
@@ -722,6 +866,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="61" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton51">
       <Properties>
@@ -731,6 +878,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="62" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton52">
       <Properties>
@@ -740,6 +890,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="63" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton53">
       <Properties>
@@ -749,6 +902,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="64" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton54">
       <Properties>
@@ -758,6 +914,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="65" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton55">
       <Properties>
@@ -767,6 +926,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="66" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton56">
       <Properties>
@@ -776,6 +938,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="67" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton57">
       <Properties>
@@ -785,6 +950,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="70" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton58">
       <Properties>
@@ -794,6 +962,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="71" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton59">
       <Properties>
@@ -803,6 +974,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="72" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton60">
       <Properties>
@@ -812,6 +986,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="73" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton61">
       <Properties>
@@ -821,6 +998,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="74" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton62">
       <Properties>
@@ -830,6 +1010,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="75" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton63">
       <Properties>
@@ -839,6 +1022,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="76" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton64">
       <Properties>
@@ -848,6 +1034,9 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
         <Property name="name" type="java.lang.String" value="77" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="onClick"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
