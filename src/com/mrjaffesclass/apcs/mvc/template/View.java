@@ -1,5 +1,6 @@
 package com.mrjaffesclass.apcs.mvc.template;
 import com.mrjaffesclass.apcs.messenger.*;
+import java.awt.Color;
 import javax.swing.JButton;
 /**
  * MVC Template
@@ -12,7 +13,8 @@ import javax.swing.JButton;
 public class View extends javax.swing.JFrame implements MessageHandler {
 
   private final Messenger mvcMessaging;
-  
+  private final JButton[][] buttons;
+  Color baseColor = new Color(0, 153, 51);
   /**
    * Creates a new view
    * @param messages mvcMessaging object
@@ -84,6 +86,14 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     jButton62.setName("75");
     jButton63.setName("76");
     jButton64.setName("77");// Create and init the GUI components
+     buttons = new JButton[][] { { jButton1, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8 },
+                                { jButton9, jButton10, jButton11, jButton12, jButton13, jButton14, jButton15, jButton16 },
+                                { jButton17, jButton18, jButton19, jButton20, jButton21, jButton22, jButton23, jButton24 },
+                                { jButton25, jButton26, jButton27, jButton28, jButton29, jButton30, jButton31, jButton32 },
+                                { jButton33, jButton34, jButton35, jButton36, jButton37, jButton38, jButton39, jButton40 },
+                                { jButton41, jButton42, jButton43, jButton44, jButton45, jButton46, jButton47, jButton48 },
+                                { jButton49, jButton50, jButton51, jButton52, jButton53, jButton54, jButton55, jButton56 },
+                                { jButton57, jButton58, jButton59, jButton60, jButton61, jButton62, jButton63, jButton64 }};
   }
   
   /**
@@ -97,6 +107,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     this.mvcMessaging.subscribe("boardChange", this);
     this.mvcMessaging.subscribe("playerTurn", this);
     this.mvcMessaging.subscribe("illegalMove", this);
+    this.mvcMessaging.subscribe("setBlank", this);
   }
   
   @Override
