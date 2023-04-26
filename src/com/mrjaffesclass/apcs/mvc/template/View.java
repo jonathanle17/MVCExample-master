@@ -204,6 +204,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         jButton62 = new javax.swing.JButton();
         jButton63 = new javax.swing.JButton();
         jButton64 = new javax.swing.JButton();
+        jButton65 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -783,6 +784,13 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
+        jButton65.setText("newGame");
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newGame(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -920,6 +928,10 @@ public class View extends javax.swing.JFrame implements MessageHandler {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton64, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(273, 273, 273)
+                .addComponent(jButton65)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1006,7 +1018,9 @@ public class View extends javax.swing.JFrame implements MessageHandler {
                         .addComponent(jButton59, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(jButton65)
+                .addGap(14, 14, 14))
         );
 
         pack();
@@ -1018,6 +1032,11 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         String buttonName = button.getName();
         this.mvcMessaging.notify("squareClicked", buttonName);
     }//GEN-LAST:event_onClick
+
+    private void newGame(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newGame
+        // TODO add your handling code here:
+        this.mvcMessaging.notify("newGame");
+    }//GEN-LAST:event_newGame
 
   /**
    * @param args the command line arguments
@@ -1085,6 +1104,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     private javax.swing.JButton jButton62;
     private javax.swing.JButton jButton63;
     private javax.swing.JButton jButton64;
+    private javax.swing.JButton jButton65;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;

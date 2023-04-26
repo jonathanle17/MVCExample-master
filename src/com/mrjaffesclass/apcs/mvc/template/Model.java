@@ -82,6 +82,42 @@ public class Model implements MessageHandler {
       return blackSquares;
   }
   
+  public void resetBoard() {
+        for (int row = 0; row < 8; row++) {
+            for (int col = 0; col < 8; col++) {
+                setSquareNeutral(row, col);
+            }
+        }
+        setInitialBoard();
+    }
+  
+  public String spaceNameTrim(String name) {
+        name = name.substring(7);
+        return name;
+    }
+
+  public String MPStringSetter(String str) {
+        String ret = spaceNameTrim(str);
+        if (this.whoseMove) {
+            ret += "t";
+        } else {
+            ret += "f";
+        }
+        return ret;
+    }
+
+  public void resetWhoseMove() {
+        this.whoseMove = true;
+    }
+  
+  public void resetLabels() {
+        this.mvcMessaging.notify("wCount", countWhiteSquares());
+        this.mvcMessaging.notify("bCount", countBlackSquares());
+        this.mvcMessaging.notify("playerTurn", this.whoseMove);
+    }
+  
+  
+  
   @Override
   public void messageHandler(String messageName, Object messagePayload) {
     if (messagePayload != null) {
