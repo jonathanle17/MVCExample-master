@@ -116,6 +116,201 @@ public class Model implements MessageHandler {
         this.mvcMessaging.notify("playerTurn", this.whoseMove);
     }
   
+  public int getSquareValue(int row, int col) {
+        return this.board[row][col];
+    }
+  
+  public int getDistanceToWall(String dir, int row, int col) {
+        if (dir.equals(Constants.NORTH)) {
+            return row;
+
+        } else if (dir.equals(Constants.NORTHEAST)) {
+            return (7 - col) < row ? (7 - col) : row;
+
+        } else if (dir.equals(Constants.EAST)) {
+            return (7 - col);
+
+        } else if (dir.equals(Constants.SOUTHEAST)) {
+            return (7 - col) < (7 - row) ? (7 - col) : (7 - row);
+
+        } else if (dir.equals(Constants.SOUTH)) {
+            return (7 - row);
+
+        } else if (dir.equals(Constants.SOUTHWEST)) {
+            return (col) < (7 - row) ? col : (7 - row);
+
+        } else if (dir.equals(Constants.WEST)) {
+            return col;
+
+        } else if (dir.equals(Constants.NORTHWEST)) {
+            return row < col ? row : col;
+        }
+
+        return -1;
+    }
+  
+   public int getDirectionSquare(String dir, int row, int col, int spaces) {
+        if (dir.equals(Constants.NORTH)) {
+            return getSquareValue(row - spaces, col);
+
+        } else if (dir.equals(Constants.NORTHEAST)) {
+            return getSquareValue(row - spaces, col + spaces);
+
+        } else if (dir.equals(Constants.EAST)) {
+            return getSquareValue(row, col + spaces);
+
+        } else if (dir.equals(Constants.SOUTHEAST)) {
+            return getSquareValue(row + spaces, col + spaces);
+
+        } else if (dir.equals(Constants.SOUTH)) {
+            return getSquareValue(row + spaces, col);
+
+        } else if (dir.equals(Constants.SOUTHWEST)) {
+            return getSquareValue(row + spaces, col - spaces);
+
+        } else if (dir.equals(Constants.WEST)) {
+            return getSquareValue(row, col - spaces);
+
+        } else if (dir.equals(Constants.NORTHWEST)) {
+            return getSquareValue(row - spaces, col - spaces);
+        }
+        return 10;
+    }
+   
+   public String getDirectionIndexes(String dir, int row, int col, int spaces) {
+        String str = "";
+        if (dir.equals(Constants.NORTH)) {
+            str += row - spaces;
+            str += col;
+            return str;
+        } else if (dir.equals(Constants.NORTHEAST)) {
+            str += row - spaces;
+            str += col + spaces;
+            return str;
+        } else if (dir.equals(Constants.EAST)) {
+            str += row;
+            str += col + spaces;
+            return str;
+        } else if (dir.equals(Constants.SOUTHEAST)) {
+            str += row + spaces;
+            str += col + spaces;
+            return str;
+        } else if (dir.equals(Constants.SOUTH)) {
+            str += row + spaces;
+            str += col;
+            return str;
+        } else if (dir.equals(Constants.SOUTHWEST)) {
+            str += row + spaces;
+            str += col - spaces;
+            return str;
+        } else if (dir.equals(Constants.WEST)) {
+            str += row;
+            str += col - spaces;
+            return str;
+        } else if (dir.equals(Constants.NORTHWEST)) {
+            str += row - spaces;
+            str += col - spaces;
+            return str;
+        }
+        return "";
+    }
+   
+   public Boolean checkDirection(String dir, int row, int col) {
+
+        int target = (this.whoseMove ? 1 : 2);
+        String str = getDirectionSquares(dir, row, col);
+
+        if (str.length() < 1) {
+            return false;
+        }
+
+        if (Character.getNumericValue(str.charAt(0)) == target || Character.getNumericValue(str.charAt(0)) == 0) {// if char is anything other than opposite color
+            return false;
+        }
+
+        for (int i = 1; i < str.length(); i++) {
+            if (Character.getNumericValue(str.charAt(i)) == target) { // if char is the target, then pattern is right
+                return true;
+            } else if (Character.getNumericValue(str.charAt(i)) == 0) { // if char is blank, then not good pattern
+                return false;
+            } // if neither(the opposite color again), then continue along the str
+        }
+
+        return false;
+    }
+   
+   public String getDirectionSquares(String dir, int row, int col) {
+        String str = "";
+        int dis = getDistanceToWall(dir, row, col);
+        for (int i = 1; i <= dis; i++) {
+            str += getDirectionSquare(dir, row, col, i);
+        }
+        return str;
+    }
+   
+   public Boolean isLegalMove(String mp) {
+
+        int row = Integer.parseInt(mp.substring(0, 1));
+        int col = Integer.parseInt(mp.substring(1, 2));
+        if (this.board[row][col] != 0) {// check if target is filled
+            return false;
+        }
+        if (!checkDirection(Constants.NORTH, row, col)
+                && !checkDirection(Constants.NORTHEAST, row, col)
+                && !checkDirection(Constants.EAST, row, col)
+                && !checkDirection(Constants.SOUTHEAST, row, col)
+                && !checkDirection(Constants.SOUTH, row, col)
+                && !checkDirection(Constants.SOUTHWEST, row, col)
+                && !checkDirection(Constants.WEST, row, col)
+                && !checkDirection(Constants.NORTHWEST, row, col)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+   
+   public void flipSquare(int row, int col) {
+        int square = getSquareValue(row, col);
+        int newColor = 0;
+
+        if (square == 1) {
+            newColor = 2;
+        } else if (square == 2) {
+            newColor = 1;
+        }
+
+        String mp = String.valueOf(row);
+        mp += col;
+        if (newColor == 1) {
+            mp += "t";
+        } else if (newColor == 2) {
+            mp += "f";
+        }
+        this.board[row][col] = newColor;
+
+        this.mvcMessaging.notify("boardChange", mp);
+    }
+   
+    public int getInverseOfValue(int val) {
+        if (val == 1) {
+            return 2;
+        } else if (val == 2) {
+            return 1;
+        }
+        return 0;
+    }
+    
+    public int getLastIndexOfSquaresToFlip(String str, int target) {
+
+        for (int i = 1; i < str.length(); i++) {
+            if (Character.getNumericValue(str.charAt(i)) != (getInverseOfValue(target))) {
+                return i - 1;
+            }
+        }
+
+        return -1;
+    }
+  
   
   
   @Override
