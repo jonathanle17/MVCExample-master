@@ -310,6 +310,134 @@ public class Model implements MessageHandler {
 
         return -1;
     }
+    
+     public void changeSurroundedSquares(String mp) {
+        int row = Integer.parseInt(mp.substring(0, 1));
+        int col = Integer.parseInt(mp.substring(1, 2));
+
+        int targetValue = getSquareValue(row, col);
+        int squaresOutToChange;
+        int rowToChange;
+        int colToChange;
+
+        if (checkDirection(Constants.NORTH, row, col)) {
+            squaresOutToChange = 1 + getLastIndexOfSquaresToFlip(getDirectionSquares(Constants.NORTH, row, col), targetValue);
+            for (int i = 1; i <= squaresOutToChange; i++) {
+                rowToChange = Character.getNumericValue(getDirectionIndexes(Constants.NORTH, row, col, i).charAt(0));
+                colToChange = Character.getNumericValue(getDirectionIndexes(Constants.NORTH, row, col, i).charAt(1));
+                flipSquare(rowToChange, colToChange);
+            }
+        }
+
+        if (checkDirection(Constants.NORTHEAST, row, col)) {
+            squaresOutToChange = 1 + getLastIndexOfSquaresToFlip(getDirectionSquares(Constants.NORTHEAST, row, col), targetValue);
+            for (int i = 1; i <= squaresOutToChange; i++) {
+                rowToChange = Character.getNumericValue(getDirectionIndexes(Constants.NORTHEAST, row, col, i).charAt(0));
+                colToChange = Character.getNumericValue(getDirectionIndexes(Constants.NORTHEAST, row, col, i).charAt(1));
+                flipSquare(rowToChange, colToChange);
+            }
+        }
+
+        if (checkDirection(Constants.EAST, row, col)) {
+            squaresOutToChange = 1 + getLastIndexOfSquaresToFlip(getDirectionSquares(Constants.EAST, row, col), targetValue);
+            for (int i = 1; i <= squaresOutToChange; i++) {
+                rowToChange = Character.getNumericValue(getDirectionIndexes(Constants.EAST, row, col, i).charAt(0));
+                colToChange = Character.getNumericValue(getDirectionIndexes(Constants.EAST, row, col, i).charAt(1));
+                flipSquare(rowToChange, colToChange);
+            }
+        }
+
+        if (checkDirection(Constants.SOUTHEAST, row, col)) {
+            squaresOutToChange = 1 + getLastIndexOfSquaresToFlip(getDirectionSquares(Constants.SOUTHEAST, row, col), targetValue);
+            for (int i = 1; i <= squaresOutToChange; i++) {
+                rowToChange = Character.getNumericValue(getDirectionIndexes(Constants.SOUTHEAST, row, col, i).charAt(0));
+                colToChange = Character.getNumericValue(getDirectionIndexes(Constants.SOUTHEAST, row, col, i).charAt(1));
+                flipSquare(rowToChange, colToChange);
+            }
+        }
+
+        if (checkDirection(Constants.SOUTH, row, col)) {
+            squaresOutToChange = 1 + getLastIndexOfSquaresToFlip(getDirectionSquares(Constants.SOUTH, row, col), targetValue);
+            for (int i = 1; i <= squaresOutToChange; i++) {
+                rowToChange = Character.getNumericValue(getDirectionIndexes(Constants.SOUTH, row, col, i).charAt(0));
+                colToChange = Character.getNumericValue(getDirectionIndexes(Constants.SOUTH, row, col, i).charAt(1));
+                flipSquare(rowToChange, colToChange);
+            }
+        }
+
+        if (checkDirection(Constants.SOUTHWEST, row, col)) {
+            squaresOutToChange = 1 + getLastIndexOfSquaresToFlip(getDirectionSquares(Constants.SOUTHWEST, row, col), targetValue);
+            for (int i = 1; i <= squaresOutToChange; i++) {
+                rowToChange = Character.getNumericValue(getDirectionIndexes(Constants.SOUTHWEST, row, col, i).charAt(0));
+                colToChange = Character.getNumericValue(getDirectionIndexes(Constants.SOUTHWEST, row, col, i).charAt(1));
+                flipSquare(rowToChange, colToChange);
+            }
+        }
+
+        if (checkDirection(Constants.WEST, row, col)) {
+            squaresOutToChange = 1 + getLastIndexOfSquaresToFlip(getDirectionSquares(Constants.WEST, row, col), targetValue);
+            for (int i = 1; i <= squaresOutToChange; i++) {
+                rowToChange = Character.getNumericValue(getDirectionIndexes(Constants.WEST, row, col, i).charAt(0));
+                colToChange = Character.getNumericValue(getDirectionIndexes(Constants.WEST, row, col, i).charAt(1));
+                flipSquare(rowToChange, colToChange);
+            }
+        }
+
+        if (checkDirection(Constants.NORTHWEST, row, col)) {
+            squaresOutToChange = 1 + getLastIndexOfSquaresToFlip(getDirectionSquares(Constants.NORTHWEST, row, col), targetValue);
+            for (int i = 1; i <= squaresOutToChange; i++) {
+                rowToChange = Character.getNumericValue(getDirectionIndexes(Constants.NORTHWEST, row, col, i).charAt(0));
+                colToChange = Character.getNumericValue(getDirectionIndexes(Constants.NORTHWEST, row, col, i).charAt(1));
+                flipSquare(rowToChange, colToChange);
+            }
+        }
+    }
+     public boolean allSquaresFilled() {
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (this.board[i][j] == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+     
+     public int winner() {
+        if (countWhiteSquares() == 0) {
+            this.isWinner = true;
+            return 2;
+        }
+        if (countBlackSquares() == 0) {
+            this.isWinner = true;
+            return 1;
+        }
+        if (allSquaresFilled()) {
+            if (countWhiteSquares() > countBlackSquares()) {
+                return 1;
+            } else if (countBlackSquares() > countWhiteSquares()) {
+                return 2;
+            } else {
+                return 0;
+            }
+        }
+
+        return -1;
+    }
+     
+     public String numWinnerToStr(int num) {
+        if (num == 1) {
+            return "White";
+        } else if (num == 2) {
+            return "Black";
+        } else if (num == 0) {
+            return "Draw";
+        }
+        return "";
+    }
+     
+    
+
   
   
   
